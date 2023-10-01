@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+.score {
+    font-size: 24px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.choice {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.choice:hover {
+    background-color: #555;
+}
+
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
