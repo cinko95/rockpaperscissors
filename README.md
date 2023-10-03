@@ -62,15 +62,28 @@ The primary goal is to entertain users with an interactive game that tests their
    
 
 ## Testing
+Functionality Testing:
+Description: Test the game's functionality by playing multiple rounds with different choices.
+Expected Outcome: The game should correctly determine the winner according to the rules and update the score accordingly.
+Result: Passed
 
-The game has undergone extensive testing to ensure its functionality and usability. Various test cases were created to check the following:
+Description: Test the game's functionality by playing rounds with different combinations of choices.
+Expected Outcome: The game should correctly identify the winner based on the specific rules for each combination.
+Result: Passed
+Reach Testing:
 
--   The game correctly determines the winner according to the rules.
--   The score is updated accurately after each round.
+Description: Test the game's compatibility with different web browsers (e.g., Chrome, Firefox, Safari, Edge).
+Expected Outcome: The game should load and function correctly on all major web browsers.
+Result: Passed
 
-## Responsiveness
+Description: Test the game's responsiveness by accessing it on various devices (e.g., desktop, laptop, tablet, mobile phone).
+Expected Outcome: The game's user interface should adapt and provide an optimal experience on different screen sizes.
+Result: Passed
 
-The game's user interface is designed to be responsive and adapt to different screen sizes. It has been tested on various devices, including desktops, laptops, tablets, and mobile phones, to ensure that it provides an optimal user experience on all platforms.
+Description: Test the game's performance on low-end devices or slow network connections.
+Expected Outcome: The game should load and run smoothly without significant lag or performance issues.
+Result: Passed
+
 
 ## Technologies Used
 
