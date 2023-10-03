@@ -1,14 +1,17 @@
 const choices = document.querySelectorAll('.choice');
+const userScoreSpan = document.getElementById('user-score');
+const computerScoreSpan = document.getElementById('computer-score');
 const resultMessage = document.getElementById('result');
 
-// Function to generate computer's choice
+let userScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
 }
 
-// Function to determine the winner
 function determineWinner(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return 'It\'s a draw!';
@@ -19,18 +22,17 @@ function determineWinner(userChoice, computerChoice) {
         (userChoice === 'lizard' && (computerChoice === 'spock' || computerChoice === 'paper')) ||
         (userChoice === 'spock' && (computerChoice === 'rock' || computerChoice === 'scissors'))
     ) {
-        return 'You win!';
+        return `You win! You chose ${userChoice}, computer chose ${computerChoice}.`;
     } else {
-        return 'Computer wins!';
+        return `Computer wins! Computer chose ${computerChoice}, you chose ${userChoice}.`;
     }
 }
 
-// Function to update the scores and display the result
 function updateScore(userChoice, computerChoice) {
     const result = determineWinner(userChoice, computerChoice);
-    if (result === 'You win!') {
+    if (result.startsWith('You win')) {
         userScore++;
-    } else if (result === 'Computer wins!') {
+    } else if (result.startsWith('Computer wins')) {
         computerScore++;
     }
 
@@ -39,14 +41,13 @@ function updateScore(userChoice, computerChoice) {
     resultMessage.textContent = result;
 }
 
-// Function to handle user's choice
+
 function userChoiceHandler(userChoice) {
     const computerChoice = getComputerChoice();
-    const result = determineWinner(userChoice, computerChoice);
-    resultMessage.textContent = `You chose ${userChoice}. Computer chose ${computerChoice}. ${result}`;
+    updateScore(userChoice, computerChoice);
 }
 
-// Add event listeners to user's choices
+
 choices.forEach(choice => {
     choice.addEventListener('click', () => {
         const userChoice = choice.getAttribute('data-choice');
