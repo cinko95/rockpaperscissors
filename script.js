@@ -36,7 +36,7 @@ function updateScore(userChoice, computerChoice) {
         } else if (result.startsWith('Computer wins')) {
             computerScore++;
         }
-
+ 
         userScoreSpan.textContent = userScore;
         computerScoreSpan.textContent = computerScore;
         resultMessage.textContent = result;
