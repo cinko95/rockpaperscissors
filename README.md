@@ -12,6 +12,8 @@ A web-based game that allows users to play Rock, Paper, Scissors, Lizard, Spock 
 - [How to Play](#how-to-play)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
+- [Testing](#testing)
+- [Responsiveness](#responsiveness)
   
 
 
@@ -71,3 +73,14 @@ To run the game locally, you can clone this repository:
 
 ```bash
 git clone https://cinko95.github.io/rockpaperscissors/
+
+## Testing
+
+The game has undergone extensive testing to ensure its functionality and usability. Various test cases were created to check the following:
+
+-   The game correctly determines the winner according to the rules.
+-   The score is updated accurately after each round.
+
+## Responsiveness
+
+The game's user interface is designed to be responsive and adapt to different screen sizes. It has been tested on various devices, including desktops, laptops, tablets, and mobile phones, to ensure that it provides an optimal user experience on all platforms.
