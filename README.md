@@ -6,12 +6,13 @@ A web-based game that allows users to play Rock, Paper, Scissors, Lizard, Spock 
 ## Table of Contents
 
 - [Description](#description)
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Demo](#demo)
 - [How to Play](#how-to-play)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-
+  
 
 
 ## Description
@@ -30,6 +31,10 @@ This project is a web-based game inspired by the classic game Rock, Paper, Sciss
 - Spock vaporizes Rock
 
 The primary goal is to entertain users with an interactive game that tests their luck and decision-making skills.
+
+## Screenshots
+![image](https://github.com/cinko95/rockpaperscissors/assets/137789244/9a21cf37-03b6-4e4e-b624-e70c4bd8d027)
+
 
 ## Features
 
